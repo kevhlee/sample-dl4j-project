@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.nd4j:nd4j-native-platform:1.0.0-M1.1'    //  Change to 'nd4j-cuda-X-platform' to use CUDA GPUs
+    implementation 'org.datavec:datavec-api:1.0.0-M1.1'
+    implementation 'org.datavec:datavec-data-image:1.0.0-M1.1'
+    implementation 'org.datavec:datavec-local:1.0.0-M1.1'
+    implementation 'org.deeplearning4j:deeplearning4j-datasets:1.0.0-M1.1'
+    implementation 'org.deeplearning4j:deeplearning4j-core:1.0.0-M1.1'
+    implementation 'org.deeplearning4j:deeplearning4j-ui:1.0.0-M1.1'
+    implementation 'org.deeplearning4j:deeplearning4j-zoo:1.0.0-M1.1'
+    implementation 'org.deeplearning4j:deeplearning4j-parallel-wrapper:1.0.0-M1.1'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
