@@ -11,6 +11,9 @@ target/
 *.iml
 .idea/
 
+# Model weights output
+weights/
+
 # MacOS
 .DS_Store
 
